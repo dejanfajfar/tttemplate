@@ -1,4 +1,10 @@
+🔎 looking for the ```ttouch``` repository -> [ttouch](https://github.com/dejanfajfar/ttouch)
+
+---
+
 ![Gitter](https://img.shields.io/gitter/room/dfajfar/ttouch.svg)
+
+![Logo](https://raw.githubusercontent.com/dejanfajfar/ttouch/master/misc/template_header_image.jpg)
 
 # ttouch template template
 
@@ -22,7 +28,7 @@ Install the dependencies
 $ npm install
 ```
 
-!important -> Update the ```package.json```
+‼️ important -> Update the ```package.json```‼ ️
 
 ```degit``` is a good tool but it still lacks the capability to manipulate the _cloned_ files once on the target system. This is why some data has to updated before you start. The data that will have to be updated is:
 * name
@@ -127,4 +133,14 @@ Starting at the bottom with the _infrastructure_ files we have:
 * src/template.template -> The [handlebars](https://handlebarsjs.com/) file template.
 * src/template.js -> Main logic file where the template gets _rendered_ and returned to the calling application
 * src/template.spec.js -> The mocha unit test for the template.
+
+### The replacement README.md
+
+The readme is quite important so I would like to provide a stub README.md file. This file is the **README.stub.md**.
+
+To replace the contained README.md without loosing it I would suggest to:
+
+```bash
+$ mv README.md README.bak.md && cp README.stub.md README.md
+```
 
