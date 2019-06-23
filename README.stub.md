@@ -6,7 +6,7 @@
 
 ![Logo](https://raw.githubusercontent.com/dejanfajfar/ttouch/master/misc/template_header_image.jpg)
 
-# @ttouch/{templateName}
+# ttt-{templateName}
 
 > Short description of your template
 
@@ -15,7 +15,7 @@ Long description
 ## Installation
 
 ```bash
-npm install -g @ttouch/{templateName}
+npm install -g ttt-{templateName}
 ```
 
 ## Usage
