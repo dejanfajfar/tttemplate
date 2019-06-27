@@ -6,12 +6,11 @@ const handlebars = require('handlebars');
 const templateFileLocation = './src/template.handlebars';
 
 module.exports.renderTemplate = (options) => {
-	const rawTemplate = fs.readFileSync(templateFileLocation, {
-		encoding: 'utf8',
-		flag: 'r'
-	});
-
-	const compiledTemplate = handlebars.compile(rawTemplate);
+	const compiledTemplate = handlebars.compile(template);
 
 	return compiledTemplate(options);
 };
+
+const template =
+`This is your handlebars template
+`;

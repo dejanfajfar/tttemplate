@@ -44,7 +44,7 @@ $ npm install
 
 The name directory where your template lives has really no merit on the published name of the template package. In order for your template to work with ```ttouch``` please name it using the following template:
 
-*@ttouch/{template-name}*
+*ttt-{template-name}*
 
 ### The template render function
 
@@ -82,7 +82,7 @@ This information includes:
 
 * absolutePath -> The absolute path, containing file name and extension, to the file being created
 * fileName -> The file name and extension
-* template -> The template name, not extended with *@ttouch/* part
+* template -> The template name, not extended with *ttt-* part
 
 #### Sample 
 
@@ -107,7 +107,6 @@ Would produce the following options object
 ```
 .
 |-- src
-|   |-- template.template
 |   |-- template.js
 |   `-- template.spec.js
 |
@@ -130,7 +129,6 @@ Starting at the bottom with the _infrastructure_ files we have:
 * .gitignore -> The gitignore file. Should cover the most common ignored files
 * .editorconfig -> Contains common editor configuration settings. Change or ignore at your own leisure
 * index.js -> Template entry point. Must export the template function. Under normal circumstances you will mostly not have to touch it
-* src/template.template -> The [handlebars](https://handlebarsjs.com/) file template.
 * src/template.js -> Main logic file where the template gets _rendered_ and returned to the calling application
 * src/template.spec.js -> The mocha unit test for the template.
 
